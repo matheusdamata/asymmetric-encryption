@@ -1,4 +1,4 @@
-import { checkoutBodySchema } from '@/schemas/checkout-schema'
+import { checkoutBodySchema } from '@/server/schemas/checkout-schema'
 import { Decrypt } from '@/server/services/decrypt'
 
 export async function POST(req: Request) {

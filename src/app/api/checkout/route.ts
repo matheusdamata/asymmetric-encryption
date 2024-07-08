@@ -6,9 +6,13 @@ export async function POST(req: Request) {
 
   const decrypt = new Decrypt()
 
-  const decryptedData = decrypt.decryptData(data)
+  try {
+    const decryptedData = decrypt.decryptData(data)
 
-  console.log('decryptedData', JSON.parse(decryptedData))
+    console.log('decryptedData', JSON.parse(decryptedData))
 
-  return Response.json({ message: 'success' })
+    return Response.json({ message: 'success' })
+  } catch (error) {
+    return Response.json({ message: 'error' })
+  }
 }

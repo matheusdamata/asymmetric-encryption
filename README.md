@@ -1,36 +1,19 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Encrypted Checkout
 
-## Getting Started
+Este projeto é uma demonstração de laboratório que utiliza [Next.js](https://nextjs.org/) com [TypeScript](https://www.typescriptlang.org/) para simular um processo de checkout. Ele envia dados fictícios de um cartão de crédito de forma criptografada usando criptografia assimétrica. O router handler do próprio Next.js é responsável por realizar a descriptografia dos dados utilizando a chave privada.
 
-First, run the development server:
+## Tecnologias Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- Criptografia Assimétrica
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Funcionalidades
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Criptografia de Dados do Cartão**: Os dados do cartão de crédito são criptografados no lado do cliente antes de serem enviados ao servidor.
+- **Descriptografia no Servidor**: O servidor utiliza a chave privada para descriptografar os dados recebidos.
+- **Simulação de Checkout**: O projeto simula um processo de checkout, enviando dados criptografados para o back-end.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Observações sobre Segurança
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Este projeto implementa uma forma básica de criptografia para fins de demonstração. Embora utilize criptografia assimétrica para proteger os dados do cartão de crédito durante a transmissão, é importante notar que a segurança de uma aplicação envolve diversas outras considerações. Questões como a gestão segura de chaves, proteção contra ataques de intermediários (Man-in-the-Middle, MitM), e a implementação de medidas de segurança adicionais são essenciais para garantir a proteção completa dos dados.

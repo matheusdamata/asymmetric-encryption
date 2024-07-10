@@ -20,11 +20,11 @@ Este projeto implementa uma forma básica de criptografia para fins de demonstra
 
 ## Imagens
 
-- **Formulário fictício**
+### Formulário fictício
 ![Formulário fictício](public/images/form.png)
 
-- **Dados criptografados com chave pública**
-![Formulário fictício](public/images/encrypted-data.png)
+### Dados criptografados com chave pública
+![Dados criptografados](public/images/encrypted-data.png)
 
-- **Dados descriptografados com chave privada**
-![Formulário fictício](public/images/decrypted-data.png)
+### Dados descriptografados com chave privada
+![Dados descriptografados](public/images/decrypted-data.png)

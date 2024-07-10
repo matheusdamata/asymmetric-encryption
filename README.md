@@ -17,3 +17,14 @@ Este projeto é uma demonstração de laboratório que utiliza [Next.js](https:/
 ## Observações sobre Segurança
 
 Este projeto implementa uma forma básica de criptografia para fins de demonstração. Embora utilize criptografia assimétrica para proteger os dados do cartão de crédito durante a transmissão, é importante notar que a segurança de uma aplicação envolve diversas outras considerações. Questões como a gestão segura de chaves, proteção contra ataques de intermediários (Man-in-the-Middle, MitM), e a implementação de medidas de segurança adicionais são essenciais para garantir a proteção completa dos dados.
+
+## Imagens
+
+- **Formulário fictício**
+![Formulário fictício](public/images/form.png)
+
+- **Dados criptografados com chave pública**
+![Formulário fictício](public/images/encrypted-data.png)
+
+- **Dados descriptografados com chave privada**
+![Formulário fictício](public/images/decrypted-data.png)
